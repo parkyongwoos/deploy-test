@@ -5,9 +5,9 @@ on:
     branches: [ "main" ]
 
 env:
-  IMAGE_NAME: my-service    # 예: my-service
+  IMAGE_NAME: cloud-run-source-deploy    # 예: my-service
   GCP_PROJECT: flowing-lead-308309  # GCP 프로젝트 ID
-  GCR_HOST: asia.gcr.io  # 또는 asia.gcr.io, us.gcr.io 등
+  GCR_HOST: asia-northeast3-docker.pkg.dev  # 또는 asia.gcr.io, us.gcr.io 등
 
 jobs:
   build-and-push:
