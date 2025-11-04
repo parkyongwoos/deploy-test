@@ -9,7 +9,7 @@ env:
   REPOSITORY: cloud-run-source-deploy
   PROJECT_ID: flowing-lead-308309
   IMAGE_NAME: my-service  # 예: my-service
-  N8N_WEBHOOK_URL: https://yvvpark.app.n8n.cloud/webhook/github
+  N8N_WEBHOOK_URL: https://yvvpark.app.n8n.cloud/webhook-test/bc3c9eb3-5798-43f0-845e-90e7765c5091
 
 jobs:
   build-and-push:
