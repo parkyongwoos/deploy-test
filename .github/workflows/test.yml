@@ -10,6 +10,7 @@ env:
   PROJECT_ID: flowing-lead-308309
   IMAGE_NAME: my-service  # 예: my-service
   CLOUD_RUN_SERVICE: service-test
+  DELIVERY_PIPELINE: my-canary-demo-app-1
   N8N_WEBHOOK_URL: https://yvvpark.app.n8n.cloud/webhook-test/bc3c9eb3-5798-43f0-845e-90e7765c5091
 
 jobs:
@@ -48,6 +49,7 @@ jobs:
           -d '{
             "service": "'"${{ env.CLOUD_RUN_SERVICE }}"'",
             "image": "'"$IMAGE"'",
+            "deliveryPipeline": "'"${{ env.DELIVERY_PIPELINE }}"'",
             "commit": "'"${GITHUB_SHA::8}"'",
             "branch": "main",
             "triggered_by": "'"${{ github.actor }}"'"
