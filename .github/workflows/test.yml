@@ -11,7 +11,7 @@ env:
   IMAGE_NAME: my-service  # 예: my-service
   CLOUD_RUN_SERVICE: service-test
   DELIVERY_PIPELINE: my-canary-demo-app-1
-  N8N_WEBHOOK_URL: https://blueberry1104.app.n8n.cloud/workflow/WHKoH5DmNGNSNQFd
+  N8N_WEBHOOK_URL: https://blueberry1104.app.n8n.cloud/webhook-test/github-actions
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
